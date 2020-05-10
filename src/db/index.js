@@ -20,8 +20,6 @@ Comments.belongsTo(Posts);
 Users.hasMany(Comments);
 Comments.belongsTo(Users);
 
-db.sync();
-
 module.exports = {
   db,
   Users,
