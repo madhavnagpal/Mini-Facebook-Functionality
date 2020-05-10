@@ -1,0 +1,20 @@
+const Sequelize = require("sequelize");
+const db = require("./index").db;
+
+const Posts = db.define("posts", {
+  post_id: {
+    type: Sequelize.INTEGER,
+    autoIncrement: true,
+    primaryKey: true,
+  },
+  post_title: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
+  post_body: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
+});
+
+module.exports.Posts = Posts;
