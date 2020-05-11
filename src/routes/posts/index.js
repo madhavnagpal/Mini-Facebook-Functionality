@@ -19,6 +19,7 @@ route.post("/:id", function (req, res) {
           post_title: req.body.title,
           post_body: req.body.content,
           userUserId: user.user_id,
+          post_id: req.body.id,
         })
           .then((post) => {
             res.status(201).send(post);

@@ -1,0 +1,17 @@
+* {
+  font-family: "ubuntulight";
+  font-weight: bolder;
+}
+#navbar {
+  position: sticky;
+  top: 0;
+}
+
+#footer {
+  position: sticky;
+  bottom: 0;
+}
+#content {
+  background-color: coral;
+  height: 2000px;
+}
