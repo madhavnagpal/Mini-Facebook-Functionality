@@ -3,20 +3,17 @@ const { Users } = require("../db/users");
 
 // creating new user with anonymous name
 async function createAnonUser() {
-  let user;
-  await Users.findOrCreate({
-    where: {
-      user_name: randomNameGenerator(),
-    },
-  })
-    .then((u) => {
-      user = u;
-    })
-    .catch((e) => {
-      user = e;
-      console.log(e);
+  try {
+    let user = await Users.findOrCreate({
+      where: {
+        user_name: randomNameGenerator(),
+      },
     });
-  return user;
+
+    return user;
+  } catch {
+    (e) => console.log(e);
+  }
 }
 
 // finding user by id

@@ -12,7 +12,7 @@ const Posts = db.define("posts", {
     allowNull: false,
   },
   post_body: {
-    type: Sequelize.STRING,
+    type: Sequelize.TEXT,
     allowNull: false,
   },
 });
