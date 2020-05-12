@@ -120,3 +120,99 @@ userId=
 title=
 body=
 ```
+
+```
+C:.
+│   server.js
+│
+├───controllers
+│       comments.js
+│       posts.js
+│       users.js
+│
+├───db
+│       comments.js
+│       index.js
+│       posts.js
+│       users.js
+│
+├───public
+│   │   index.html
+│   │
+│   ├───app
+│   │       allposts.js
+│   │       design.js
+│   │       home.css
+│   │       mypost.js
+│   │       navbar.js
+│   │       newpost.js
+│   │
+│   ├───components
+│   │       allpost.html
+│   │       footer.html
+│   │       myposts.html
+│   │       navbar.html
+│   │       newpost.html
+│   │
+│   ├───css
+│   │       bootstrap.css
+│   │
+│   ├───fonts
+│   │   ├───Ubuntu
+│   │   │       Ubuntu-Bold.ttf
+│   │   │       Ubuntu-BoldItalic.ttf
+│   │   │       Ubuntu-Italic.ttf
+│   │   │       Ubuntu-Light.ttf
+│   │   │       Ubuntu-LightItalic.ttf
+│   │   │       Ubuntu-Medium.ttf
+│   │   │       Ubuntu-MediumItalic.ttf
+│   │   │       Ubuntu-Regular.ttf
+│   │   │       UFL.txt
+│   │   │
+│   │   └───webfontkit
+│   │       │   generator_config.txt
+│   │       │   stylesheet.css
+│   │       │   ubuntu-bold-demo.html
+│   │       │   ubuntu-bold-webfont.woff
+│   │       │   ubuntu-bold-webfont.woff2
+│   │       │   ubuntu-bolditalic-demo.html
+│   │       │   ubuntu-bolditalic-webfont.woff
+│   │       │   ubuntu-bolditalic-webfont.woff2
+│   │       │   ubuntu-italic-demo.html
+│   │       │   ubuntu-italic-webfont.woff
+│   │       │   ubuntu-italic-webfont.woff2
+│   │       │   ubuntu-light-demo.html
+│   │       │   ubuntu-light-webfont.woff
+│   │       │   ubuntu-light-webfont.woff2
+│   │       │   ubuntu-lightitalic-demo.html
+│   │       │   ubuntu-lightitalic-webfont.woff
+│   │       │   ubuntu-lightitalic-webfont.woff2
+│   │       │   ubuntu-medium-demo.html
+│   │       │   ubuntu-medium-webfont.woff
+│   │       │   ubuntu-medium-webfont.woff2
+│   │       │   ubuntu-mediumitalic-demo.html
+│   │       │   ubuntu-mediumitalic-webfont.woff
+│   │       │   ubuntu-mediumitalic-webfont.woff2
+│   │       │   ubuntu-regular-demo.html
+│   │       │   ubuntu-regular-webfont.woff
+│   │       │   ubuntu-regular-webfont.woff2
+│   │       │
+│   │       └───specimen_files
+│   │               grid_12-825-55-15.css
+│   │               specimen_stylesheet.css
+│   │
+│   └───js
+│           bootstrap.js
+│           jquery-3.4.1.js
+│           popper.js
+│
+├───routes
+│   │   users.js
+│   │
+│   └───posts
+│           comments.js
+│           index.js
+│
+└───utility
+        users.js
+```
