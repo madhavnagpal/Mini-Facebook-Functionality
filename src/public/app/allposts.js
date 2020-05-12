@@ -1,11 +1,11 @@
-$(
+function getAllPosts() {
   $.get("/posts", {}, (posts) => {
     let list = $("#allPosts");
     list.empty();
     for (let post of posts) {
       let item = $(`
-      <div class="col-md-4 col-sm-6">
-      <div class="card m-2">
+      <div class="col-md-4 col-sm-6" >
+      <div class="card m-2 " style="background-color:lavender;">
         <div class="card-body">
           <h5 class="card-title">${post.post_title}</h5>
           <h6 class="card-subtitle mb-2 text-muted">Author Name</h6>
@@ -18,8 +18,7 @@ $(
         </div>
       </div>
     </div>`);
-      console.log(post);
       list.append(item);
     }
-  })
-);
+  });
+}

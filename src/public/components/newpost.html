@@ -1,3 +1,28 @@
-<div class="container">
-  <p>Hello I am in newpost.html</p>
+<div class="container mt-5" id="formNewPost">
+  <div class="container px-4 pt-4" id="formInputs">
+    <div class="form-group">
+      <label for="postTitle">Post Title</label>
+      <input
+        type="text"
+        class="form-control"
+        id="postTitle"
+        placeholder="Enter title of your post here.."
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="postBody">Post Body</label>
+      <textarea
+        class="form-control"
+        id="postBody"
+        rows="5"
+        placeholder="write your post here.."
+      ></textarea>
+    </div>
+
+    <div class="btn btn-dark" style="float: right;" id="submitPostBtn">
+      Submit Post
+    </div>
+  </div>
 </div>
+<script src="/app/newpost.js"></script>

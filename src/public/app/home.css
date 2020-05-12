@@ -13,5 +13,12 @@
   bottom: 0;
 }
 #content {
-  background-color: rgb(252, 154, 119);
+  background-color: white;
+  min-height: 100vh;
+}
+#formNewPost {
+  max-width: 500px;
+  height: 400px;
+  background-color: lavender;
+  margin: 18px auto;
 }
