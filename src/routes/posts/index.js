@@ -28,5 +28,20 @@ route.post("/", async function (req, res) {
     }
   }
 });
+// get all posts of a user
+route.get("/:id", async function (req, res) {
+  try {
+    let posts = await Posts.findAll({
+      where: {
+        userUserId: req.params.id,
+      },
+    });
+    res.status(200).send(posts);
+  } catch {
+    (err) => {
+      res.status(500).send(err);
+    };
+  }
+});
 
 module.exports = route;
