@@ -1,10 +1,11 @@
-const { Users, Posts } = require("../db/index");
+const { Users, Posts, Comments } = require("../db/index");
 
 async function createPost(user_id, post_title, post_body) {
   try {
     let user = await Users.findOne({
       where: { user_id },
     });
+
     if (user) {
       let post = await Posts.create({
         post_title,

@@ -4,7 +4,9 @@ const { createPost } = require("../../controllers/posts");
 
 // get all posts
 route.get("/", async function (req, res) {
-  await Posts.findAll()
+  await Posts.findAll({
+    include: [Users, Comments],
+  })
     .then((posts) => {
       res.status(200).send(posts);
     })

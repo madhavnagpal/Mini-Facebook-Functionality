@@ -121,6 +121,20 @@ title=
 body=
 ```
 
+### Comments
+
+1.  `GET /comments/:post_id`
+    gets all comments of a post
+
+2.  `POST /comments`
+    create a comment
+    Required fields in body -
+    ```
+    user_id =
+    post_id =
+    comment_body=
+    ```
+
 ```
 C:.
 │   server.js
