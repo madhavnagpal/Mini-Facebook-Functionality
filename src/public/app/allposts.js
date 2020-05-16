@@ -15,15 +15,34 @@ function getAllPosts() {
           </p>
           <input type="text" placeholder="add suggestions">
           <button class="card-link btnComment">Comment</button>
+          <ul class="comment" id=${post.post_id}> </ul> 
         </div>
       </div>
        </div>`);
-      let commentBox = $("<ul></ul>");
+
+      // let commentBox = $("<ul></ul>");
+      // for (let comment of post.comments) {
+      //   commentBox.append($("<li>").text(comment.comment_body));
+      // }
+      // item.append(commentBox);
+      // list.append(item);
+      let commentBox = $(`#${post.post_id}`);
+
+      // console.log(commentBox, post.post_id);
       for (let comment of post.comments) {
-        commentBox.append($("<li>").text(comment.comment_body));
+        commentBox.append(
+          $("<li>").text(comment.comment_body).css({
+            color: "black",
+          })
+        );
+        console.log(commentBox);
       }
-      item.append(commentBox);
+      // item.append(commentBox);
       list.append(item);
+
+      $(".btnComment").on("click", (e) => {
+        console.log(post);
+      });
     }
   });
 }
