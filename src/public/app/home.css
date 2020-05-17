@@ -22,3 +22,7 @@
   background-color: lavender;
   margin: 18px auto;
 }
+.comment {
+  list-style-type: none;
+  float: left;
+}
