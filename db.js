@@ -1,14 +1,13 @@
 const Sequelize = require("sequelize");
+
 module.exports.db = db = new Sequelize({
-  database: "socialmedia",
-  username: "postman",
-  password: "socialmedia",
-  dialect: "mysql",
+  dialect: "sqlite",
+  storage: __dirname + "/socialmedia.db",
 });
 
-const { Comments } = require("./comments");
-const { Users } = require("./users");
-const { Posts } = require("./posts");
+const { Comments } = require("./src/db/comments");
+const { Users } = require("./src/db/users");
+const { Posts } = require("./src/db/posts");
 
 // associations
 Users.hasMany(Posts);

@@ -1,4 +1,4 @@
-const { Users, Posts, Comments } = require("../../db/index");
+const { Users, Posts, Comments } = require("../../../db");
 const route = require("express").Router();
 const { createPost } = require("../../controllers/posts");
 

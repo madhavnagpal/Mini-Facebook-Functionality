@@ -1,5 +1,5 @@
 const { randomNameGenerator } = require("../utility/users");
-const { Users } = require("../db/users");
+const { Users } = require("../../db");
 
 // creating new user with anonymous name
 async function createAnonUser() {

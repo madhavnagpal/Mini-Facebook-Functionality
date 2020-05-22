@@ -1,4 +1,4 @@
-const { Users, Posts, Comments } = require("../db/index");
+const { Users, Posts, Comments } = require("../../db");
 
 async function createPost(user_id, post_title, post_body) {
   try {

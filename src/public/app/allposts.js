@@ -1,20 +1,21 @@
 function getAllPosts() {
-  // ajax request POST
+  /*
+   ajax request POST
+                    */
   $.get("/posts", {}, (posts) => {
     let list = $("#allPosts");
     list.empty();
     //iterating on all posts
     for (let post of posts) {
-      let count = 1;
       let item = $(
         `
                   <div class="col-md-4 col-sm-6" >
                     <div class="card m-2 " style="background-color:lavender;">
                       <div class="card-body">
                         <h5 class="card-title">${post.post_title}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">${
-                          post.user.user_name
-                        }</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                          ${post.user.user_name}
+                        </h6>
                         <p class="card-text">
                           ${post.post_body.substr(0, 200)}
                           <a href="#">...read more</a>

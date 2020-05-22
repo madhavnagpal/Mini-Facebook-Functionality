@@ -1,5 +1,5 @@
 const route = require("express").Router();
-const { Users } = require("../db/index");
+const { Users } = require("../../db");
 const {
   createAnonUser,
   findUserById,

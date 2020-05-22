@@ -1,5 +1,5 @@
 const route = require("express").Router();
-const { db, Users, Comments, Posts } = require("../../db/index");
+const { Comments } = require("../../../db");
 const { createComment } = require("../../controllers/comments");
 
 //create comments
